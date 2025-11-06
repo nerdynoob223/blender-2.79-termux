@@ -1,0 +1,72 @@
+name: Build Blender 2.79 (Auto Release)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install build dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y \
+            build-essential \
+            cmake \
+            git \
+            ninja-build \
+            pkg-config \
+            python3-dev \
+            python3-pip \
+            libx11-dev \
+            libxi-dev \
+            libxxf86vm-dev \
+            libxfixes-dev \
+            libxrender-dev \
+            libxrandr-dev \
+            libxinerama-dev \
+            libglew-dev \
+            libopenal-dev \
+            libfreetype6-dev \
+            libjpeg-dev \
+            libpng-dev \
+            libtiff-dev \
+            libavdevice-dev \
+            libavformat-dev \
+            libavutil-dev \
+            libavcodec-dev \
+            libswscale-dev \
+            libepoxy-dev \
+            libspnav-dev \
+            libjemalloc-dev \
+            libboost-all-dev
+
+      - name: Clone Blender source (2.79)
+        run: |
+          git clone https://github.com/blender/blender.git
+          cd blender
+          git checkout blender-v2.79b-release
+
+      - name: Configure Blender build
+        run: |
+          cd blender
+          mkdir build && cd build
+          cmake .. -G Ninja -DWITH_PLAYER=OFF -DWITH_GAMEENGINE=ON
+
+      - name: Build Blender
+        run: |
+          cd blender/build
+          ninja -j$(nproc)
+
+      - name: Upload build output
+        uses: actions/upload-artifact@v4
+        with:
+          name: blender-binaries
+          path: blender/build/bin
