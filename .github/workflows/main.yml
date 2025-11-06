@@ -58,7 +58,7 @@ jobs:
         run: |
           cd blender-2.79b
           mkdir build && cd build
-          cmake .. -G Ninja -DWITH_PLAYER=OFF -DWITH_GAMEENGINE=ON
+          cmake .. -G Ninja -DWITH_PLAYER=OFF -DWITH_GAMEENGINE=ON -DPYTHON_VERSION=3.1
 
       - name: Build Blender
         run: |
