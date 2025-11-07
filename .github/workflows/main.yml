@@ -7,9 +7,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  setup:
     runs-on: ubuntu-latest
-
+    outputs:
+      cache-key: ${{ steps.cache-source.outputs.cache-key }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -48,25 +49,45 @@ jobs:
             libjemalloc-dev \
             libboost-all-dev
 
+      - name: Cache Blender source
+        id: cache-source
+        uses: actions/cache@v4
+        with:
+          path: blender-src
+          key: blender-src-${{ hashFiles('**/setup.sh') }}
+
       - name: Clone Blender source (2.79)
         run: |
-          git clone https://github.com/nerdynoob223/blender-2.79b/ -b blender-v2.79b-release
-          cd blender-2.79b
-          git checkout blender-v2.79b-release
+          # Remove if old dir exists
+          rm -rf blender-src
+          git clone https://github.com/nerdynoob223/blender-2.79b/ blender-src -b blender-v2.79b-release
+
+  build:
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Restore Blender source from cache
+        uses: actions/cache@v4
+        with:
+          path: blender-src
+          key: blender-src-${{ hashFiles('**/setup.sh') }}
 
       - name: Configure Blender build
         run: |
-          cd blender-2.79b
-          mkdir build && cd build
+          cd blender-src
+          mkdir -p build && cd build
           cmake .. -G Ninja -DWITH_PLAYER=OFF -DWITH_GAMEENGINE=ON -DPYTHON_VERSION=3
 
       - name: Build Blender
         run: |
-          cd blender-2.79b/build
+          cd blender-src/build
           ninja -j$(nproc)
 
       - name: Upload build output
         uses: actions/upload-artifact@v4
         with:
           name: blender-binaries
-          path: blender/build/bin
+          path: blender-src/build/bin
