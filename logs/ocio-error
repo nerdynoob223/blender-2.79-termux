@@ -1,0 +1,270 @@
+[  0%] Built target bf_intern_guardedalloc
+[  0%] Built target bf_intern_glew_mx
+[  0%] Built target datatoc
+[  0%] Built target bf_intern_mikktspace
+[  0%] Built target bf_intern_libmv
+[  0%] Built target bf_intern_string
+[  1%] Built target bf_intern_memutil
+[  1%] Built target bf_intern_decklink
+[  2%] Built target extern_curve_fit_nd
+[  2%] Built target extern_rangetree
+[  2%] Built target extern_wcwidth
+[  2%] Built target extern_minilzo
+[  3%] Built target bf_intern_dualcon
+[  3%] Built target bf_intern_eigen
+[  4%] Built target bf_intern_ghost
+[  4%] Built target extern_clew
+[  4%] Built target extern_cuew
+[  4%] Built target extern_lzma
+[  4%] Built target extern_xdnd
+[  4%] Built target datatoc_icon
+[  4%] Built target bf_editor_animation
+[  5%] Built target bf_editor_armature
+[  6%] Built target bf_editor_curve
+[  7%] Built target bf_editor_gpencil
+[  7%] Built target bf_editor_io
+[  8%] Built target bf_editor_mask
+[  9%] Built target bf_editor_interface
+[  9%] Built target bf_editor_metaball
+[  9%] Built target bf_editor_physics
+[ 10%] Built target bf_editor_mesh
+[ 11%] Built target bf_editor_render
+[ 12%] Built target bf_editor_object
+[ 12%] Built target bf_editor_screen
+[ 12%] Built target bf_editor_sound
+[ 13%] Built target bf_editor_sculpt_paint
+[ 13%] Built target bf_editor_space_action
+[ 13%] Built target bf_editor_space_api
+[ 14%] Built target bf_editor_space_buttons
+[ 14%] Built target bf_editor_space_console
+[ 14%] Built target bf_editor_space_file
+[ 15%] Built target bf_editor_space_clip
+[ 16%] Built target bf_editor_space_graph
+[ 16%] Built target bf_editor_space_image
+[ 16%] Built target bf_editor_space_info
+[ 16%] Built target bf_editor_space_nla
+[ 17%] Built target bf_editor_space_logic
+[ 17%] Built target bf_editor_space_outliner
+[ 17%] Built target bf_editor_space_script
+[ 18%] Built target bf_editor_space_node
+[ 19%] Built target bf_editor_space_sequencer
+[ 20%] Built target bf_editor_space_time
+[ 20%] Built target bf_editor_space_text
+[ 20%] Built target bf_editor_space_userpref
+[ 21%] Built target bf_editor_util
+[ 22%] Built target bf_editor_space_view3d
+[ 22%] Built target bf_editor_uvedit
+[ 22%] Built target bf_editor_transform
+[ 23%] Built target bf_windowmanager
+[ 29%] Built target bf_editor_datafiles
+[ 29%] Built target bf_blenfont
+[ 32%] Built target bf_blenlib
+[ 32%] Built target bf_blentranslation
+[ 33%] Built target makesdna
+[ 34%] Built target bf_ikplugin
+[ 37%] Built target bf_bmesh
+[ 39%] Built target bf_render
+[ 46%] Built target bf_blenkernel
+[ 47%] Built target bf_physics
+[ 50%] Built target bf_gpu
+[ 51%] Built target bf_dna_blenlib
+[ 52%] Built target bf_imbuf
+[ 53%] Built target bf_imbuf_cineon
+[ 56%] Built target bf_modifiers
+[ 56%] Built target bf_imbuf_dds
+[ 57%] Built target bf_depsgraph
+[ 57%] Built target bf_avi
+[ 57%] Built target bf_python_ext
+[ 58%] Built target bf_python
+[ 59%] Built target bf_python_mathutils
+[ 59%] Generating buildinfo.h_fake, buildinfo.h
+[ 60%] Built target bf_python_bmesh
+fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+fatal: Needed a single revision
+error: malformed object name HEAD
+[ 60%] Built target bf_dna
+[ 69%] Built target bf_nodes
+[ 69%] Built target msgfmt
+fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+error: malformed object name HEAD
+fatal: your current branch 'master' does not have any commits yet
+fatal: bad revision 'HEAD'
+[ 69%] Building CXX object intern/opencolorio/CMakeFiles/bf_intern_opencolorio.dir/ocio_impl.cc.o
+[ 69%] Building CXX object intern/opencolorio/CMakeFiles/bf_intern_opencolorio.dir/ocio_impl_glsl.cc.o
+[ 70%] Built target bf_blenloader
+[ 74%] Built target makesrna
+[ 74%] Built target buildinfo
+[ 74%] Building C object source/creator/CMakeFiles/buildinfoobj.dir/buildinfo.c.o
+[ 77%] Built target bf_rna
+[ 77%] Built target buildinfoobj
+[ 87%] Built target bf_compositor
+[100%] Built target bf_freestyle
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:273:42: error: no member named 'getDisplayColorSpaceName' in 'OpenColorIO_v2_5::Config'
+  273 |                 return (*(ConstConfigRcPtr *) config)->getDisplayColorSpaceName(display, view);
+      |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:285:55: error: cannot initialize a parameter of type 'double *' with an lvalue of type 'float *'
+  285 |                 (*(ConstConfigRcPtr *) config)->getDefaultLumaCoefs(rgb);
+      |                                                                     ^~~
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:1230:39: note: passing argument to parameter 'rgb' here
+ 1230 |     void getDefaultLumaCoefs(double * rgb) const;
+      |                                       ^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:421:41: error: no member named 'apply' in 'OpenColorIO_v2_5::Processor'
+  421 |                 (*(ConstProcessorRcPtr *) processor)->apply(*(PackedImageDesc *) img);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:435:11: error: cannot initialize a variable of type 'float *' with an rvalue of type 'void *'
+  435 |                         float *pixels = img->getData();
+      |                                ^        ~~~~~~~~~~~~~~
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:449:42: error: no member named 'apply' in 'OpenColorIO_v2_5::Processor'
+  449 |                         (*(ConstProcessorRcPtr *) processor)->apply(*img);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:459:40: error: no member named 'applyRGB' in 'OpenColorIO_v2_5::Processor'
+  459 |         (*(ConstProcessorRcPtr *) processor)->applyRGB(pixel);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:464:40: error: no member named 'applyRGBA' in 'OpenColorIO_v2_5::Processor'
+  464 |         (*(ConstProcessorRcPtr *) processor)->applyRGBA(pixel);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:470:41: error: no member named 'applyRGBA' in 'OpenColorIO_v2_5::Processor'
+  470 |                 (*(ConstProcessorRcPtr *) processor)->applyRGBA(pixel);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:482:41: error: no member named 'applyRGBA' in 'OpenColorIO_v2_5::Processor'
+  482 |                 (*(ConstProcessorRcPtr *) processor)->applyRGBA(pixel);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:512:2: error: unknown type name 'DisplayTransformRcPtr'; did you mean 'DisplayViewTransformRcPtr'?
+  512 |         DisplayTransformRcPtr *dt = OBJECT_GUARDED_NEW(DisplayTransformRcPtr);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+      |         DisplayViewTransformRcPtr
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorTypes.h:152:47: note: 'DisplayViewTransformRcPtr' declared here
+  152 | typedef OCIO_SHARED_PTR<DisplayViewTransform> DisplayViewTransformRcPtr;
+      |                                               ^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:512:49: error: unknown type name 'DisplayTransformRcPtr'; did you mean 'DisplayViewTransformRcPtr'?
+  512 |         DisplayTransformRcPtr *dt = OBJECT_GUARDED_NEW(DisplayTransformRcPtr);
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~
+      |                                                        DisplayViewTransformRcPtr
+/data/data/com.termux/files/home/blender-2.79b/intern/guardedalloc/MEM_guardedalloc.h:244:25: note: expanded from macro 'OBJECT_GUARDED_NEW'
+  244 |         new(MEM_mallocN(sizeof(type), __func__)) type(args)
+      |                                ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorTypes.h:152:47: note: 'DisplayViewTransformRcPtr' declared here
+  152 | typedef OCIO_SHARED_PTR<DisplayViewTransform> DisplayViewTransformRcPtr;
+      |                                               ^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:512:49: error: unknown type name 'DisplayTransformRcPtr'; did you mean 'DisplayViewTransformRcPtr'?
+  512 |         DisplayTransformRcPtr *dt = OBJECT_GUARDED_NEW(DisplayTransformRcPtr);
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~
+      |                                                        DisplayViewTransformRcPtr
+/data/data/com.termux/files/home/blender-2.79b/intern/guardedalloc/MEM_guardedalloc.h:244:43: note: expanded from macro 'OBJECT_GUARDED_NEW'
+  244 |         new(MEM_mallocN(sizeof(type), __func__)) type(args)
+      |                                                  ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorTypes.h:152:47: note: 'DisplayViewTransformRcPtr' declared here
+  152 | typedef OCIO_SHARED_PTR<DisplayViewTransform> DisplayViewTransformRcPtr;
+      |                                               ^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:514:8: error: use of undeclared identifier 'DisplayTransform'; did you mean 'DisplayViewTransform'?
+  514 |         *dt = DisplayTransform::Create();
+      |               ^~~~~~~~~~~~~~~~
+      |               DisplayViewTransform
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorTransforms.h:376:18: note: 'DisplayViewTransform' declared here
+  376 | class OCIOEXPORT DisplayViewTransform : public Transform
+      |                  ^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:521:5: error: use of undeclared identifier 'DisplayTransformRcPtr'
+  521 |         (*(DisplayTransformRcPtr *) dt)->setInputColorSpaceName(name);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:521:28: error: expected expression
+  521 |         (*(DisplayTransformRcPtr *) dt)->setInputColorSpaceName(name);
+      |                                   ^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:526:5: error: use of undeclared identifier 'DisplayTransformRcPtr'
+  526 |         (*(DisplayTransformRcPtr *) dt)->setDisplay(name);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:526:28: error: expected expression
+  526 |         (*(DisplayTransformRcPtr *) dt)->setDisplay(name);
+      |                                   ^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:531:5: error: use of undeclared identifier 'DisplayTransformRcPtr'
+  531 |         (*(DisplayTransformRcPtr *) dt)->setView(name);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl.cc:531:28: error: expected expression
+  531 |         (*(DisplayTransformRcPtr *) dt)->setView(name);
+      |                                   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl_glsl.cc:297:16: error: variable type 'GpuShaderDesc' is an abstract class
+  297 |         GpuShaderDesc shaderDesc;
+      |                       ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3418:18: note: unimplemented pure virtual method 'setTextureMaxWidth' in 'GpuShaderDesc'
+ 3418 |     virtual void setTextureMaxWidth(unsigned maxWidth) = 0;
+      |                  ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3419:22: note: unimplemented pure virtual method 'getTextureMaxWidth' in 'GpuShaderDesc'
+ 3419 |     virtual unsigned getTextureMaxWidth() const noexcept = 0;
+      |                      ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3422:18: note: unimplemented pure virtual method 'setAllowTexture1D' in 'GpuShaderDesc'
+ 3422 |     virtual void setAllowTexture1D(bool allowed) = 0;
+      |                  ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3423:18: note: unimplemented pure virtual method 'getAllowTexture1D' in 'GpuShaderDesc'
+ 3423 |     virtual bool getAllowTexture1D() const = 0;
+      |                  ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3444:18: note: unimplemented pure virtual method 'addUniform' in 'GpuShaderDesc'
+ 3444 |     virtual bool addUniform(const char * name,
+      |                  ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3447:18: note: unimplemented pure virtual method 'addUniform' in 'GpuShaderDesc'
+ 3447 |     virtual bool addUniform(const char * name,
+      |                  ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3450:18: note: unimplemented pure virtual method 'addUniform' in 'GpuShaderDesc'
+ 3450 |     virtual bool addUniform(const char * name,
+      |                  ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3457:18: note: unimplemented pure virtual method 'addUniform' in 'GpuShaderDesc'
+ 3457 |     virtual bool addUniform(const char * name,
+      |                  ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3466:18: note: unimplemented pure virtual method 'addUniform' in 'GpuShaderDesc'
+ 3466 |     virtual bool addUniform(const char * name,
+      |                  ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3509:22: note: unimplemented pure virtual method 'addTexture' in 'GpuShaderDesc'
+ 3509 |     virtual unsigned addTexture(const char * textureName,
+      |                      ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3528:22: note: unimplemented pure virtual method 'add3DTexture' in 'GpuShaderDesc'
+ 3528 |     virtual unsigned add3DTexture(const char * textureName,
+      |                      ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3764:22: note: unimplemented pure virtual method 'getNumUniforms' in 'GpuShaderDesc'
+ 3764 |     virtual unsigned getNumUniforms() const noexcept = 0;
+      |                      ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3766:26: note: unimplemented pure virtual method 'getUniform' in 'GpuShaderDesc'
+ 3766 |     virtual const char * getUniform(unsigned index, UniformData & data) const = 0;
+      |                          ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3776:25: note: unimplemented pure virtual method 'getUniformBufferSize' in 'GpuShaderDesc'
+ 3776 |     virtual std::size_t getUniformBufferSize() const noexcept = 0;
+      |                         ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3779:22: note: unimplemented pure virtual method 'getNumTextures' in 'GpuShaderDesc'
+ 3779 |     virtual unsigned getNumTextures() const noexcept = 0;
+      |                      ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3780:18: note: unimplemented pure virtual method 'getTexture' in 'GpuShaderDesc'
+ 3780 |     virtual void getTexture(unsigned index,
+      |                  ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3788:18: note: unimplemented pure virtual method 'getTextureValues' in 'GpuShaderDesc'
+ 3788 |     virtual void getTextureValues(unsigned index, const float *& values) const = 0;
+      |                  ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3791:22: note: unimplemented pure virtual method 'getNum3DTextures' in 'GpuShaderDesc'
+ 3791 |     virtual unsigned getNum3DTextures() const noexcept = 0;
+      |                      ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3792:18: note: unimplemented pure virtual method 'get3DTexture' in 'GpuShaderDesc'
+ 3792 |     virtual void get3DTexture(unsigned index,
+      |                  ^
+/data/data/com.termux/files/usr/bin/../../usr/include/OpenColorIO/OpenColorIO.h:3797:18: note: unimplemented pure virtual method 'get3DTextureValues' in 'GpuShaderDesc'
+ 3797 |     virtual void get3DTextureValues(unsigned index, const float *& values) const = 0;
+      |                  ^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl_glsl.cc:312:45: error: no member named 'getGpuLut3DCacheID' in 'OpenColorIO_v2_5::Processor'
+  312 |         std::string lut3dCacheID = ocio_processor->getGpuLut3DCacheID(shaderDesc);
+      |                                    ~~~~~~~~~~~~~~~~^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl_glsl.cc:315:19: error: no member named 'getGpuLut3D' in 'OpenColorIO_v2_5::Processor'
+  315 |                 ocio_processor->getGpuLut3D(state->lut3d, shaderDesc);
+      |                 ~~~~~~~~~~~~~~~~^
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl_glsl.cc:325:46: error: no member named 'getGpuShaderTextCacheID' in 'OpenColorIO_v2_5::Processor'
+  325 |         std::string shaderCacheID = ocio_processor->getGpuShaderTextCacheID(shaderDesc);
+      |                                     ~~~~~~~~~~~~~~~~^
+make[2]: *** [intern/opencolorio/CMakeFiles/bf_intern_opencolorio.dir/build.make:113: intern/opencolorio/CMakeFiles/bf_intern_opencolorio.dir/ocio_impl.cc.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+/data/data/com.termux/files/home/blender-2.79b/intern/opencolorio/ocio_impl_glsl.cc:364:25: error: no member named 'getGpuShaderText' in 'OpenColorIO_v2_5::Processor'
+  364 |                 os << ocio_processor->getGpuShaderText(shaderDesc) << "\n";
+      |                       ~~~~~~~~~~~~~~~~^
+5 errors generated.
+make[2]: *** [intern/opencolorio/CMakeFiles/bf_intern_opencolorio.dir/build.make:127: intern/opencolorio/CMakeFiles/bf_intern_opencolorio.dir/ocio_impl_glsl.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2488: intern/opencolorio/CMakeFiles/bf_intern_opencolorio.dir/all] Error 2
+make: *** [Makefile:166: all] Error 2
