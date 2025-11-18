@@ -17,3 +17,279 @@
 [  3%] Built target extern_clew
 [  4%] Built target extern_cuew
 [  4%] Building CXX object extern/carve/CMakeFiles/extern_carve.dir/carve-capi.cc.o
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:28:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-util.h:30:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/csg.hpp:24:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/carve.hpp:51:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/collection.hpp:20:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/collection/unordered.hpp:29:
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/collection/unordered/boost_impl.hpp:28:14: warning: extra qualification on member 'unordered_map' [-Wextra-qualification]
+   28 |   class std::unordered_map : public boost::unordered_map<Key, T, Hash, Pred> {
+      |              ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/collection/unordered/boost_impl.hpp:26:3: error: too few template parameters in template redeclaration
+   26 |   template <typename Key, typename T, typename Hash = boost::hash<Key>,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   27 |             typename Pred = std::equal_to<Key> >
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:1024:1: note: previous template declaration is here
+ 1024 | template <class _Key,
+      | ^~~~~~~~~~~~~~~~~~~~~
+ 1025 |           class _Tp,
+      |           ~~~~~~~~~~
+ 1026 |           class _Hash  = hash<_Key>,
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1027 |           class _Pred  = equal_to<_Key>,
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1028 |           class _Alloc = allocator<pair<const _Key, _Tp> > >
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:28:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-util.h:30:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/csg.hpp:34:
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/intersection.hpp:120:21: error: no member named 'data_type' in 'std::unordered_map<carve::csg::IObj, std::map<carve::csg::IObj, carve::mesh::Vertex<3> *>, carve::csg::IObj_hash>'
+  120 |         for (super::data_type::const_iterator j = i->second.begin(); j != i->second.end(); ++j) {
+      |              ~~~~~~~^
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:33:
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/mesh_simplify.hpp:1305:39: error: no member named 'data_type' in 'std::unordered_map<carve::mesh::Face<3> *, std::set<carve::mesh::Face<3> *>>'
+ 1305 |             for (interaction_graph_t::data_type::iterator i = interacting_faces[curr].begin(), e = interacting_faces[curr].end(); i != e; ++i) {
+      |                  ~~~~~~~~~~~~~~~~~~~~~^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/mesh_simplify.hpp:1305:98: error: expected ';' in 'for' statement specifier
+ 1305 |             for (interaction_graph_t::data_type::iterator i = interacting_faces[curr].begin(), e = interacting_faces[curr].end(); i != e; ++i) {
+      |                                                                                                  ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/mesh_simplify.hpp:1305:98: error: expected expression
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/mesh_simplify.hpp:1305:136: error: use of undeclared identifier 'e'
+ 1305 |             for (interaction_graph_t::data_type::iterator i = interacting_faces[curr].begin(), e = interacting_faces[curr].end(); i != e; ++i) {
+      |                                                                                                                                        ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/mesh_simplify.hpp:1305:137: error: expected ')'
+ 1305 |             for (interaction_graph_t::data_type::iterator i = interacting_faces[curr].begin(), e = interacting_faces[curr].end(); i != e; ++i) {
+      |                                                                                                                                         ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/mesh_simplify.hpp:1305:17: note: to match this '('
+ 1305 |             for (interaction_graph_t::data_type::iterator i = interacting_faces[curr].begin(), e = interacting_faces[curr].end(); i != e; ++i) {
+      |                 ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/mesh_simplify.hpp:1305:141: error: use of undeclared identifier 'i'
+ 1305 |             for (interaction_graph_t::data_type::iterator i = interacting_faces[curr].begin(), e = interacting_faces[curr].end(); i != e; ++i) {
+      |                                                                                                                                             ^
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:28:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-util.h:30:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/csg.hpp:20:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/list:1743:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:525:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/boyer_moore_searcher.h:26:
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:647:75: error: type 'const std::hash<std::pair<int, int>>' does not provide a call operator
+  647 |   _LIBCPP_HIDE_FROM_ABI size_t operator()(const _Key& __x) const { return static_cast<const _Hash&>(*this)(__x); }
+      |                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__hash_table:1773:20: note: in instantiation of member function 'std::__unordered_map_hasher<std::pair<int, int>, std::__hash_value_type<std::pair<int, int>, int>, std::hash<std::pair<int, int>>, std::equal_to<std::pair<int, int>>>::operator()' requested here
+ 1773 |   size_t __hash  = hash_function()(__k);
+      |                    ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:1385:90: note: in instantiation of function template specialization 'std::__hash_table<std::__hash_value_type<std::pair<int, int>, int>, std::__unordered_map_hasher<std::pair<int, int>, std::__hash_value_type<std::pair<int, int>, int>, std::hash<std::pair<int, int>>, std::equal_to<std::pair<int, int>>>, std::__unordered_map_equal<std::pair<int, int>, std::__hash_value_type<std::pair<int, int>, int>, std::equal_to<std::pair<int, int>>, std::hash<std::pair<int, int>>>, std::allocator<std::__hash_value_type<std::pair<int, int>, int>>>::find<std::pair<int, int>>' requested here
+ 1385 |   _LIBCPP_HIDE_FROM_ABI const_iterator find(const key_type& __k) const { return __table_.find(__k); }
+      |                                                                                          ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:113:20: note: in instantiation of member function 'std::unordered_map<std::pair<int, int>, int>::find' requested here
+  113 |                 found = edge_map.find(std::make_pair(v1, v2));
+      |                                  ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:191:9: note: in instantiation of function template specialization '(anonymous namespace)::edgeIndexMap_get_if_exists<int, int>' requested here
+  191 |                         if (!edgeIndexMap_get_if_exists(orig_loop_index_map,
+      |                              ^
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:28:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-util.h:30:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/csg.hpp:20:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/list:1743:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:525:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/boyer_moore_searcher.h:26:
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:647:75: error: type 'const std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>' does not provide a call operator
+  647 |   _LIBCPP_HIDE_FROM_ABI size_t operator()(const _Key& __x) const { return static_cast<const _Hash&>(*this)(__x); }
+      |                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__hash_table:1509:21: note: in instantiation of member function 'std::__unordered_map_hasher<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>::operator()' requested here
+ 1509 |   size_t __hash   = hash_function()(__k);
+      |                     ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:1748:8: note: in instantiation of function template specialization 'std::__hash_table<std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>, std::__unordered_map_hasher<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>, std::__unordered_map_equal<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>, std::allocator<std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>>>::__emplace_unique_key_args<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, const std::piecewise_construct_t &, std::tuple<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *> &&>, std::tuple<>>' requested here
+ 1748 |       .__emplace_unique_key_args(
+      |        ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:77:3: note: in instantiation of member function 'std::unordered_map<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>::operator[]' requested here
+   77 |                 (*edge_map)[std::make_pair(v1, v2)] = index;
+      |                 ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:257:3: note: in instantiation of function template specialization '(anonymous namespace)::edgeIndexMap_put<carve::mesh::Vertex<3> *, std::pair<int, int>>' requested here
+  257 |                 edgeIndexMap_put(edge_origindex_map, v1, v2, orig_edge_index);
+      |                 ^
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:28:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-util.h:30:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/csg.hpp:20:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/list:1743:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:525:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/boyer_moore_searcher.h:26:
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:640:111: error: call to implicitly-deleted default constructor of 'std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>'
+  640 |   _LIBCPP_HIDE_FROM_ABI __unordered_map_hasher() _NOEXCEPT_(is_nothrow_default_constructible<_Hash>::value) : _Hash() {}
+      |                                                                                                               ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/compressed_pair.h:77:52: note: in instantiation of member function 'std::__unordered_map_hasher<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>::__unordered_map_hasher' requested here
+   77 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR explicit __compressed_pair_elem(__default_init_tag) {}
+      |                                                    ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:1091:25: note: in instantiation of member function 'std::__hash_table<std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>, std::__unordered_map_hasher<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>, std::__unordered_map_equal<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>, std::allocator<std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>>>::__hash_table' requested here
+ 1091 |   _LIBCPP_HIDE_FROM_ABI unordered_map() _NOEXCEPT_(is_nothrow_default_constructible<__table>::value) {}
+      |                         ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:305:45: note: in instantiation of member function 'std::unordered_map<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>::unordered_map' requested here
+  305 |                 std::unordered_map<VertexPair, OrigIndex> edge_origindex_map;
+      |                                                           ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:510:36: note: default constructor of 'hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>' is implicitly deleted because base class '__enum_hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>' has a deleted default constructor
+  510 | struct _LIBCPP_TEMPLATE_VIS hash : public __enum_hash<_Tp> {};
+      |                                    ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:504:3: note: '__enum_hash' has been explicitly marked deleted here
+  504 |   __enum_hash()                              = delete;
+      |   ^
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:28:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-util.h:30:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/csg.hpp:20:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/list:1743:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:525:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/boyer_moore_searcher.h:26:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:592:
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__hash_table:639:17: error: static assertion failed due to requirement 'integral_constant<bool, false>::value': the specified hash does not meet the Hash requirements
+  639 |   static_assert(__check_hash_requirements<_Key, _Hash>::value,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__hash_table:653:5: note: in instantiation of template class 'std::__enforce_unordered_container_requirements<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>' requested here
+  653 |     typename __enforce_unordered_container_requirements<_Key, _Hash, _Equal>::type
+      |     ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:1182:26: note: while substituting explicitly-specified template arguments into function template '__diagnose_unordered_container_requirements' 
+ 1182 |     static_assert(sizeof(std::__diagnose_unordered_container_requirements<_Key, _Hash, _Pred>(0)), "");
+      |                          ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:305:45: note: in instantiation of member function 'std::unordered_map<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>::~unordered_map' requested here
+  305 |                 std::unordered_map<VertexPair, OrigIndex> edge_origindex_map;
+      |                                                           ^
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:28:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-util.h:30:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/csg.hpp:20:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/list:1743:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:525:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/boyer_moore_searcher.h:26:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:592:
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__hash_table:1773:20: error: no matching function for call to object of type 'const hasher' (aka 'const std::__unordered_map_hasher<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>')
+ 1773 |   size_t __hash  = hash_function()(__k);
+      |                    ^~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:1385:90: note: in instantiation of function template specialization 'std::__hash_table<std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>, std::__unordered_map_hasher<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>, std::__unordered_map_equal<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>, std::allocator<std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>>>::find<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>' requested here
+ 1385 |   _LIBCPP_HIDE_FROM_ABI const_iterator find(const key_type& __k) const { return __table_.find(__k); }
+      |                                                                                          ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:93:20: note: in instantiation of member function 'std::unordered_map<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>::find' requested here
+   93 |                 found = edge_map.find(std::make_pair(v1, v2));
+      |                                  ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:340:7: note: in instantiation of function template specialization '(anonymous namespace)::edgeIndexMap_get<carve::mesh::Vertex<3> *, std::pair<int, int>>' requested here
+  340 |                                                 edgeIndexMap_get(edge_origindex_map,
+      |                                                 ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:644:32: note: candidate function not viable: no known conversion from 'const std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>' to 'const std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::pair<int, int>>' for 1st argument
+  644 |   _LIBCPP_HIDE_FROM_ABI size_t operator()(const _Cp& __x) const {
+      |                                ^          ~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:640:111: error: call to implicitly-deleted default constructor of 'std::hash<std::pair<int, int>>'
+  640 |   _LIBCPP_HIDE_FROM_ABI __unordered_map_hasher() _NOEXCEPT_(is_nothrow_default_constructible<_Hash>::value) : _Hash() {}
+      |                                                                                                               ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/compressed_pair.h:77:52: note: in instantiation of member function 'std::__unordered_map_hasher<std::pair<int, int>, std::__hash_value_type<std::pair<int, int>, int>, std::hash<std::pair<int, int>>, std::equal_to<std::pair<int, int>>>::__unordered_map_hasher' requested here
+   77 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR explicit __compressed_pair_elem(__default_init_tag) {}
+      |                                                    ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:1091:25: note: in instantiation of member function 'std::__hash_table<std::__hash_value_type<std::pair<int, int>, int>, std::__unordered_map_hasher<std::pair<int, int>, std::__hash_value_type<std::pair<int, int>, int>, std::hash<std::pair<int, int>>, std::equal_to<std::pair<int, int>>>, std::__unordered_map_equal<std::pair<int, int>, std::__hash_value_type<std::pair<int, int>, int>, std::equal_to<std::pair<int, int>>, std::hash<std::pair<int, int>>>, std::allocator<std::__hash_value_type<std::pair<int, int>, int>>>::__hash_table' requested here
+ 1091 |   _LIBCPP_HIDE_FROM_ABI unordered_map() _NOEXCEPT_(is_nothrow_default_constructible<__table>::value) {}
+      |                         ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:44:16: note: in instantiation of member function 'std::unordered_map<std::pair<int, int>, int>::unordered_map' requested here
+   44 | typedef struct CarveMeshDescr {
+      |                ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:510:36: note: default constructor of 'hash<std::pair<int, int>>' is implicitly deleted because base class '__enum_hash<std::pair<int, int>>' has a deleted default constructor
+  510 | struct _LIBCPP_TEMPLATE_VIS hash : public __enum_hash<_Tp> {};
+      |                                    ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:504:3: note: '__enum_hash' has been explicitly marked deleted here
+  504 |   __enum_hash()                              = delete;
+      |   ^
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:28:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-util.h:30:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/csg.hpp:20:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/list:1743:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:525:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/boyer_moore_searcher.h:26:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:592:
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__hash_table:639:17: error: static assertion failed due to requirement 'integral_constant<bool, false>::value': the specified hash does not meet the Hash requirements
+  639 |   static_assert(__check_hash_requirements<_Key, _Hash>::value,
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__hash_table:653:5: note: in instantiation of template class 'std::__enforce_unordered_container_requirements<std::pair<int, int>, std::hash<std::pair<int, int>>, std::equal_to<std::pair<int, int>>>' requested here
+  653 |     typename __enforce_unordered_container_requirements<_Key, _Hash, _Equal>::type
+      |     ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:1182:26: note: while substituting explicitly-specified template arguments into function template '__diagnose_unordered_container_requirements' 
+ 1182 |     static_assert(sizeof(std::__diagnose_unordered_container_requirements<_Key, _Hash, _Pred>(0)), "");
+      |                          ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:44:16: note: in instantiation of member function 'std::unordered_map<std::pair<int, int>, int>::~unordered_map' requested here
+   44 | typedef struct CarveMeshDescr {
+      |                ^
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:28:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-util.h:30:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/csg.hpp:20:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/list:1743:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:525:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/boyer_moore_searcher.h:26:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:592:
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__hash_table:1509:21: error: no matching function for call to object of type 'hasher' (aka 'std::__unordered_map_hasher<std::pair<int, int>, std::__hash_value_type<std::pair<int, int>, int>, std::hash<std::pair<int, int>>, std::equal_to<std::pair<int, int>>>')
+ 1509 |   size_t __hash   = hash_function()(__k);
+      |                     ^~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:1748:8: note: in instantiation of function template specialization 'std::__hash_table<std::__hash_value_type<std::pair<int, int>, int>, std::__unordered_map_hasher<std::pair<int, int>, std::__hash_value_type<std::pair<int, int>, int>, std::hash<std::pair<int, int>>, std::equal_to<std::pair<int, int>>>, std::__unordered_map_equal<std::pair<int, int>, std::__hash_value_type<std::pair<int, int>, int>, std::equal_to<std::pair<int, int>>, std::hash<std::pair<int, int>>>, std::allocator<std::__hash_value_type<std::pair<int, int>, int>>>::__emplace_unique_key_args<std::pair<int, int>, const std::piecewise_construct_t &, std::tuple<std::pair<int, int> &&>, std::tuple<>>' requested here
+ 1748 |       .__emplace_unique_key_args(
+      |        ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:77:3: note: in instantiation of member function 'std::unordered_map<std::pair<int, int>, int>::operator[]' requested here
+   77 |                 (*edge_map)[std::make_pair(v1, v2)] = index;
+      |                 ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:680:4: note: in instantiation of function template specialization '(anonymous namespace)::edgeIndexMap_put<int, int>' requested here
+  680 |                         edgeIndexMap_put(&mesh_descr->orig_loop_index_map, v1, v2, loop_index++);
+      |                         ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:644:32: note: candidate function not viable: no known conversion from 'const std::pair<int, int>' to 'const std::__hash_value_type<std::pair<int, int>, int>' for 1st argument
+  644 |   _LIBCPP_HIDE_FROM_ABI size_t operator()(const _Cp& __x) const {
+      |                                ^          ~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:647:75: error: type 'const std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>' does not provide a call operator
+  647 |   _LIBCPP_HIDE_FROM_ABI size_t operator()(const _Key& __x) const { return static_cast<const _Hash&>(*this)(__x); }
+      |                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__hash_table:1773:20: note: in instantiation of member function 'std::__unordered_map_hasher<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>::operator()' requested here
+ 1773 |   size_t __hash  = hash_function()(__k);
+      |                    ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:1385:90: note: in instantiation of function template specialization 'std::__hash_table<std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>, std::__unordered_map_hasher<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>, std::__unordered_map_equal<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>, std::allocator<std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>>>::find<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>' requested here
+ 1385 |   _LIBCPP_HIDE_FROM_ABI const_iterator find(const key_type& __k) const { return __table_.find(__k); }
+      |                                                                                          ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:135:20: note: in instantiation of member function 'std::unordered_map<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>::find' requested here
+  135 |                 found = edge_map.find(std::make_pair(v1, v2));
+      |                                  ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:828:7: note: in instantiation of function template specialization '(anonymous namespace)::edgeIndexMap_exists<carve::mesh::Vertex<3> *, int>' requested here
+  828 |                 if (edgeIndexMap_exists(*edge_map, v1, v2)) {
+      |                     ^
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:28:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-util.h:30:
+In file included from /data/data/com.termux/files/home/blender-2.79b/extern/carve/include/carve/csg.hpp:20:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/list:1743:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/functional:525:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/boyer_moore_searcher.h:26:
+In file included from /data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:592:
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__hash_table:1509:21: error: no matching function for call to object of type 'hasher' (aka 'std::__unordered_map_hasher<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>')
+ 1509 |   size_t __hash   = hash_function()(__k);
+      |                     ^~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:1748:8: note: in instantiation of function template specialization 'std::__hash_table<std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>, std::__unordered_map_hasher<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>, std::__unordered_map_equal<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>, std::allocator<std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>>>::__emplace_unique_key_args<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, const std::piecewise_construct_t &, std::tuple<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *> &&>, std::tuple<>>' requested here
+ 1748 |       .__emplace_unique_key_args(
+      |        ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:77:3: note: in instantiation of member function 'std::unordered_map<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>::operator[]' requested here
+   77 |                 (*edge_map)[std::make_pair(v1, v2)] = index;
+      |                 ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:843:3: note: in instantiation of function template specialization '(anonymous namespace)::edgeIndexMap_put<carve::mesh::Vertex<3> *, int>' requested here
+  843 |                 edgeIndexMap_put(edge_map, v1, v2, edge_index);
+      |                 ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:644:32: note: candidate function not viable: no known conversion from 'const std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>' to 'const std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>' for 1st argument
+  644 |   _LIBCPP_HIDE_FROM_ABI size_t operator()(const _Cp& __x) const {
+      |                                ^          ~~~~~~~~~~~~~~
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:640:111: error: call to implicitly-deleted default constructor of 'std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>'
+  640 |   _LIBCPP_HIDE_FROM_ABI __unordered_map_hasher() _NOEXCEPT_(is_nothrow_default_constructible<_Hash>::value) : _Hash() {}
+      |                                                                                                               ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__memory/compressed_pair.h:77:52: note: in instantiation of member function 'std::__unordered_map_hasher<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>::__unordered_map_hasher' requested here
+   77 |   _LIBCPP_HIDE_FROM_ABI _LIBCPP_CONSTEXPR explicit __compressed_pair_elem(__default_init_tag) {}
+      |                                                    ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/unordered_map:1091:25: note: in instantiation of member function 'std::__hash_table<std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>, std::__unordered_map_hasher<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>, std::__unordered_map_equal<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>, std::equal_to<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>, std::hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>>, std::allocator<std::__hash_value_type<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>>>::__hash_table' requested here
+ 1091 |   _LIBCPP_HIDE_FROM_ABI unordered_map() _NOEXCEPT_(is_nothrow_default_constructible<__table>::value) {}
+      |                         ^
+/data/data/com.termux/files/home/blender-2.79b/extern/carve/carve-capi.cc:939:38: note: in instantiation of member function 'std::unordered_map<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>, int>::unordered_map' requested here
+  939 |         std::unordered_map<VertexPair, int> edge_map;
+      |                                             ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:510:36: note: default constructor of 'hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>' is implicitly deleted because base class '__enum_hash<std::pair<carve::mesh::Vertex<3> *, carve::mesh::Vertex<3> *>>' has a deleted default constructor
+  510 | struct _LIBCPP_TEMPLATE_VIS hash : public __enum_hash<_Tp> {};
+      |                                    ^
+/data/data/com.termux/files/usr/bin/../../usr/include/c++/v1/__functional/hash.h:504:3: note: '__enum_hash' has been explicitly marked deleted here
+  504 |   __enum_hash()                              = delete;
+      |   ^
+1 warning and 19 errors generated.
+make[2]: *** [extern/carve/CMakeFiles/extern_carve.dir/build.make:79: extern/carve/CMakeFiles/extern_carve.dir/carve-capi.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:2927: extern/carve/CMakeFiles/extern_carve.dir/all] Error 2
+make: *** [Makefile:166: all] Error 2
